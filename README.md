@@ -133,15 +133,21 @@ In this guidline you will have a full steps insturctions about how to install th
 \
 &nbsp;
 - Now, **choose the command-line `PHP` path** you want to use, checkmark the box to add the PHP path, and click Next.
-  ![13](assets/composer_2.png)
+\
+&nbsp;
+![13](assets/composer_2.png)
 \
 &nbsp;
 - Composer setup pop-up a screen that provides an option to use a `proxy` server to connect to the internet. If you want to use a proxy server, checkmark the box and enter the proxy URL; if not, leave it and click on the Next We are skipping this as we are not using any proxy server to connect internet.
-  ![14](assets/composer_3.png)
+\
+&nbsp;
+![14](assets/composer_3.png)
 \
 &nbsp;
 - The Composer setup is ready to install on your computer; review your settings and click on the Install button.
-  ![15](assets/composer_4.png)
+\
+&nbsp;
+![15](assets/composer_4.png)
 \
 &nbsp;
 
