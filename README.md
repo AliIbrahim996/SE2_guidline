@@ -1,9 +1,9 @@
 
-# Installaion steps
+# Installation steps
 
 In this guidline you will have a full steps insturctions about how to install the required tools for our course.
 
-- [Installaion steps](#installaion-steps)
+- [Installation steps](#installation-steps)
   - [XAMPP](#xampp)
   - [Vscode Installation](#vscode-installation)
   - [Composer](#composer)
@@ -13,6 +13,7 @@ In this guidline you will have a full steps insturctions about how to install th
       - [A Progressive Framework](#a-progressive-framework)
       - [A Scalable Framework](#a-scalable-framework)
       - [A Community Framework](#a-community-framework)
+    - [How to install laravel?](#how-to-install-laravel)
 
 \
 &nbsp;
@@ -187,5 +188,13 @@ In this guidline you will have a full steps insturctions about how to install th
 #### A Community Framework
 
   Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have contributed to the framework. Who knows, maybe you'll even become a Laravel contributor.
+
+### How to install laravel?
+
+  just open Command-Prompt as an administrator and run this command in order to install `laravel installer` as a global `composer` dependency:
+
+  ```sh
+    composer global require laravel/installer
+  ```
 
 **Best Regards**
