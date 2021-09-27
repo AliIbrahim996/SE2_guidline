@@ -1,6 +1,6 @@
 # Installation steps
 
-In this guideline you will have a full steps instructions about how to install the required tools for our course.
+In this guideline you will have a full steps instructions on how to install the required tools for our course.
 
 - [Installation steps](#installation-steps)
   - [XAMPP](#xampp)
@@ -13,9 +13,6 @@ In this guideline you will have a full steps instructions about how to install t
       - [A Scalable Framework](#a-scalable-framework)
       - [A Community Framework](#a-community-framework)
     - [How to install laravel?](#how-to-install-laravel)
-
-\
-&nbsp;
 
 ## XAMPP
 
@@ -60,9 +57,6 @@ In this guideline you will have a full steps instructions about how to install t
       &nbsp;
      ![5](assets/XAMPP_05.jpg)
 
-\
-&nbsp;
-
 ## Vscode Installation
 
 * * *
@@ -99,27 +93,24 @@ In this guideline you will have a full steps instructions about how to install t
   5. **Hit Install**:
       \
       &nbsp;
-      ![9](assets/vs_code_5.png)
+      ![10](assets/vs_code_5.png)
       \
       &nbsp;
   6. **Start the installation process**:
       Wait a bit while it gets installed (The green color fills the bar).
       \
       &nbsp;
-      ![10](../assets/vs_code_6.png)
+      ![11]assets/vs_code_6.png)
       \
       &nbsp;
   7. **Complete installation**:
      Click `Finish` to exit Setup. Uncheck in the check box.
      \
       &nbsp;
-     ![11](assets/vs_code_7.png)
+     ![12](assets/vs_code_7.png)
      \
       &nbsp;
   
-\
-&nbsp;
-
 ## Composer
 
 * * *
@@ -129,25 +120,25 @@ In this guideline you will have a full steps instructions about how to install t
 - **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)-it will install the latest composer version whenever it is executed. just hit next.
 \
 &nbsp;
-![12](assets/composer_1.png).
+![13](assets/composer_1.png).
 \
 &nbsp;
 - Now, **choose the command-line `PHP` path** you want to use, checkmark the box to add the PHP path, and click Next.
 \
 &nbsp;
-![13](assets/composer_2.png)
+![14](assets/composer_2.png)
 \
 &nbsp;
 - Composer setup pop-up a screen that provides an option to use a `proxy` server to connect to the internet. If you want to use a proxy server, checkmark the box and enter the proxy URL; if not, leave it and click on the Next We are skipping this as we are not using any proxy server to connect internet.
 \
 &nbsp;
-![14](assets/composer_3.png)
+![15](assets/composer_3.png)
 \
 &nbsp;
 - The Composer setup is ready to install on your computer; review your settings and click on the Install button.
 \
 &nbsp;
-![15](assets/composer_4.png)
+![16](assets/composer_4.png)
 \
 &nbsp;
 
@@ -155,9 +146,23 @@ In this guideline you will have a full steps instructions about how to install t
 
 * * *
   Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+  In order to setup postman follow these instructions:
 
-\
-&nbsp;
+  1. **_Download_** postman from here for [win 64bit](https://dl.pstmn.io/download/latest/win64) or from here for [win 32bit](https://dl.pstmn.io/download/latest/win32)
+   \
+   &nbsp;
+  2. **_Run_** the `installer` and wait for a few minutes
+   \
+   &nbsp;
+  ![17](assets/postman1.png) .
+  \
+   &nbsp;
+  3. **Once the installation completes**, you will be redirected to a window as shown in the image where you can click on Stop signing in and take me straight to the app (as this app can also be used without logging in) or otherwise you will get a new window to sign up.
+  \
+   &nbsp;
+  ![18](assets/postman2.png)
+  \
+  &nbsp;
 
 ## Laravel
 
@@ -195,12 +200,15 @@ In this guideline you will have a full steps instructions about how to install t
   ```sh
     composer global require laravel/installer
   ```
+
 - **Install vs code extensions**
   - Laravel Extension Pack is a collection of extensions for Laravel development.
     - first click on extensions manager(1) and in the search bar write `laravel`(2), finally choose `Laravel Extension Pack`  then click on install as shown below:
   \
   &nbsp;
-  ![16](assets/lara1.png)
-
+  ![19](assets/lara1.png)
 
 **Best Regards**
+\
+&nbsp;
+**_Eng. Ali Ibrahim_**&nbsp; &nbsp; &nbsp;**_Eng. Azzam Habib_**
