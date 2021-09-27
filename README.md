@@ -100,7 +100,7 @@ In this guideline you will have a full steps instructions on how to install the 
       Wait a bit while it gets installed (The green color fills the bar).
       \
       &nbsp;
-      ![11]assets/vs_code_6.png)
+      ![11](assets/vs_code_6.png)
       \
       &nbsp;
   7. **Complete installation**:
