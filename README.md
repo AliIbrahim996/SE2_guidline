@@ -90,10 +90,9 @@ In this guidline you will have a full steps insturctions about how to install th
       ![8](assets/vs_code_3.png)
       \
       &nbsp;
-  4. **Select the required options**
+  4. **Select the required options** select all options.
       \
       &nbsp;
-      select all options.
       ![9](assets/vs_code_4.png)
       \
       &nbsp;
@@ -127,7 +126,9 @@ In this guidline you will have a full steps insturctions about how to install th
    Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
    Composer is not a package manager in the same sense as Yum or Apt are. Yes, it deals with "packages" or libraries, but it manages them on a per-project basis, installing them in a directory (e.g. vendor) inside your project. By default, it does not install anything globally. Thus, it is a dependency manager. It does however support a "global" project for convenience via the global command.
 
-- **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) - it will install the latest composer version whenever it is executed.just hit next.
+- **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)-it will install the latest composer version whenever it is executed.just hit next.
+\
+&nbsp;
 ![12](assets/composer_1.png).
 \
 &nbsp;
