@@ -28,26 +28,36 @@ In this guidline you will have a full steps insturctions about how to install th
       \
       &nbsp;
   2. **Run .exe file**:
-  Once the software bundle has been downloaded, you can start the installation by double clicking on the file with the ending .exe
+  Once the software bundle has been downloaded, you can start the installation by double clicking on the file with the endin.exe
     \
     &nbsp;
   3. **Start the setup wizard**:
+     \
+      &nbsp;
       ![1](assets/XAMPP_01.jpg)
       \
       &nbsp;
   4. **Choose software components**:
+      \
+      &nbsp;
      ![2](assets/XAMPP_02.jpg)
      \
       &nbsp;
   5. **Choose the installation directory**:
+     \
+      &nbsp;
      ![3](assets/XAMPP_03.jpg)
      \
       &nbsp;
   6. **Start the installation process**:
+      \
+      &nbsp;
      ![4](assets/XAMPP_04.jpg)
      \
       &nbsp;
   7. **Complete installation**:
+     \
+      &nbsp;
      ![5](assets/XAMPP_05.jpg)
 
 \
@@ -60,6 +70,8 @@ In this guidline you will have a full steps insturctions about how to install th
   
   1. **Download**:
       You can download and install it from [here](https://code.visualstudio.com/Download) and choose a version that satisfies your pc/ laptop hardware.
+      \
+      &nbsp;
       ![6](assets/vs_code_1.jpg).
       \
       &nbsp;
@@ -67,29 +79,41 @@ In this guidline you will have a full steps insturctions about how to install th
   2. **Run .exe file**:
       Once the software bundle has been downloaded, you can start the installation by double clicking on the file with the ending .exe Now a dialogue box appears.
       Select I accept the agreement, Then select Next.
+      \
+      &nbsp;
       ![7](assets/vs_code_2.png)
       \
       &nbsp;
   3. **Hit next**:
+      \
+      &nbsp;
       ![8](assets/vs_code_3.png)
       \
       &nbsp;
   4. **Select the required options**
+      \
+      &nbsp;
       select all options.
       ![9](assets/vs_code_4.png)
       \
       &nbsp;
   5. **Hit Install**:
+      \
+      &nbsp;
       ![9](assets/vs_code_5.png)
       \
       &nbsp;
   6. **Start the installation process**:
       Wait a bit while it gets installed (The green color fills the bar).
+      \
+      &nbsp;
       ![10](assets/vs_code_6.png)
       \
       &nbsp;
   7. **Complete installation**:
      Click `Finish` to exit Setup. Uncheck in the check box.
+     \
+      &nbsp;
      ![11](assets/vs_code_7.png)
      \
       &nbsp;
@@ -103,15 +127,18 @@ In this guidline you will have a full steps insturctions about how to install th
    Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
    Composer is not a package manager in the same sense as Yum or Apt are. Yes, it deals with "packages" or libraries, but it manages them on a per-project basis, installing them in a directory (e.g. vendor) inside your project. By default, it does not install anything globally. Thus, it is a dependency manager. It does however support a "global" project for convenience via the global command.
 
-- **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) - it will install the latest composer version whenever it is executed. just hit next
-  ![12](assets/composer_1.png).
-
+- **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) - it will install the latest composer version whenever it is executed.just hit next.
+![12](assets/composer_1.png).
+\
+&nbsp;
 - Now, **choose the command-line `PHP` path** you want to use, checkmark the box to add the PHP path, and click Next.
   ![13](assets/composer_2.png)
-
+\
+&nbsp;
 - Composer setup pop-up a screen that provides an option to use a `proxy` server to connect to the internet. If you want to use a proxy server, checkmark the box and enter the proxy URL; if not, leave it and click on the Next We are skipping this as we are not using any proxy server to connect internet.
   ![14](assets/composer_3.png)
-
+\
+&nbsp;
 - The Composer setup is ready to install on your computer; review your settings and click on the Install button.
   ![15](assets/composer_4.png)
 \
