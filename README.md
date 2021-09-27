@@ -1,7 +1,6 @@
-
 # Installation steps
 
-In this guidline you will have a full steps insturctions about how to install the required tools for our course.
+In this guideline you will have a full steps instructions about how to install the required tools for our course.
 
 - [Installation steps](#installation-steps)
   - [XAMPP](#xampp)
@@ -21,15 +20,15 @@ In this guidline you will have a full steps insturctions about how to install th
 ## XAMPP
 
 * * *
- XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
- Follow these insturctions in order to install XAMPP
+ XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and use.
+ Follow these instructions in order to install XAMPP
   
   1. **Download**:
   download and install it from [here](https://www.apachefriends.org/xampp-files/8.0.10/xampp-windows-x64-8.0.10-0-VS16-installer.exe)
       \
       &nbsp;
   2. **Run .exe file**:
-  Once the software bundle has been downloaded, you can start the installation by double clicking on the file with the endin.exe
+  Once the software bundle has been downloaded, you can start the installation by double-clicking on the file with the endin.exe
     \
     &nbsp;
   3. **Start the setup wizard**:
@@ -67,7 +66,7 @@ In this guidline you will have a full steps insturctions about how to install th
 ## Vscode Installation
 
 * * *
-  Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
+  Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS, and Linux. It comes with built-in support for JavaScript, TypeScript, and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
   
   1. **Download**:
       You can download and install it from [here](https://code.visualstudio.com/Download) and choose a version that satisfies your pc/ laptop hardware.
@@ -78,7 +77,7 @@ In this guidline you will have a full steps insturctions about how to install th
       &nbsp;
 
   2. **Run .exe file**:
-      Once the software bundle has been downloaded, you can start the installation by double clicking on the file with the ending .exe Now a dialogue box appears.
+      Once the software bundle has been downloaded, you can start the installation by double-clicking on the file with the ending .exe Now a dialogue box appears.
       Select I accept the agreement, Then select Next.
       \
       &nbsp;
@@ -107,7 +106,7 @@ In this guidline you will have a full steps insturctions about how to install th
       Wait a bit while it gets installed (The green color fills the bar).
       \
       &nbsp;
-      ![10](assets/vs_code_6.png)
+      ![10](../assets/vs_code_6.png)
       \
       &nbsp;
   7. **Complete installation**:
@@ -127,7 +126,7 @@ In this guidline you will have a full steps insturctions about how to install th
    Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
    Composer is not a package manager in the same sense as Yum or Apt are. Yes, it deals with "packages" or libraries, but it manages them on a per-project basis, installing them in a directory (e.g. vendor) inside your project. By default, it does not install anything globally. Thus, it is a dependency manager. It does however support a "global" project for convenience via the global command.
 
-- **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)-it will install the latest composer version whenever it is executed.just hit next.
+- **Download and run** [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)-it will install the latest composer version whenever it is executed. just hit next.
 \
 &nbsp;
 ![12](assets/composer_1.png).
@@ -177,24 +176,31 @@ In this guidline you will have a full steps insturctions about how to install th
 
   We like to call Laravel a "progressive" framework. By that, we mean that Laravel grows with you. If you're just taking your first steps into web development, Laravel's vast library of documentation, guides, and video tutorials will help you learn the ropes without becoming overwhelmed.
 
-  If you're a senior developer, Laravel gives you robust tools for dependency injection, unit testing, queues, real-time events, and more. Laravel is fine-tuned for building professional web applications and ready to handle enterprise work loads.
+  If you're a senior developer, Laravel gives you robust tools for dependency injection, unit testing, queues, real-time events, and more. Laravel is fine-tuned for building professional web applications and ready to handle enterprise workloads.
 
 #### A Scalable Framework
 
   Laravel is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Laravel's built-in support for fast, distributed cache systems like Redis, horizontal scaling with Laravel is a breeze. In fact, Laravel applications have been easily scaled to handle hundreds of millions of requests per month.
 
-  Need extreme scaling? Platforms like Laravel Vapor allow you to run your Laravel application at nearly limitless scale on AWS's latest serverless technology.
+  Need extreme scaling? Platforms like Laravel Vapor allow you to run your Laravel application at a nearly limitless scale on AWS's latest serverless technology.
 
 #### A Community Framework
 
-  Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have contributed to the framework. Who knows, maybe you'll even become a Laravel contributor.
+  Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer-friendly framework available. In addition, thousands of talented developers from around the world have contributed to the framework. Who knows, maybe you'll even become a Laravel contributor.
 
 ### How to install laravel?
 
-  just open Command-Prompt as an administrator and run this command in order to install `laravel installer` as a global `composer` dependency:
-
+- Open Command-Prompt as an administrator and run this command in order to install `laravel installer` as a global `composer` dependency:
+  
   ```sh
     composer global require laravel/installer
   ```
+- **Install vs code extensions**
+  - Laravel Extension Pack is a collection of extensions for Laravel development.
+    - first click on extensions manager(1) and in the search bar write `laravel`(2), finally choose `Laravel Extension Pack`  then click on install as shown below:
+  \
+  &nbsp;
+  ![16](assets/lara1.png)
+
 
 **Best Regards**
