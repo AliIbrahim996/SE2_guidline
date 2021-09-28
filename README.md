@@ -13,6 +13,7 @@ In this guideline you will have a full steps instructions on how to install the 
       - [A Scalable Framework](#a-scalable-framework)
       - [A Community Framework](#a-community-framework)
     - [How to install laravel?](#how-to-install-laravel)
+  - [PhpStorm (optional)](#phpstorm-optional)
 
 ## XAMPP
 
@@ -207,6 +208,13 @@ In this guideline you will have a full steps instructions on how to install the 
   \
   &nbsp;
   ![19](assets/lara1.png)
+
+
+## PhpStorm (optional)
+
+  `PhpStorm` is perfect for working with Symfony, Laravel, Drupal, WordPress, Zend Framework, Magento, Joomla!, CakePHP, Yii, and other frameworks.The editor actually 'gets' your code and deeply understands its structure, supporting all the PHP language features for modern and legacy projects. It provides the best code completion, refactorings, on-the-fly error prevention, and more.
+  If you have a good pc/ laptop hardware you can download and install it insted of `Vs code`.
+  [Download Link](https://www.jetbrains.com/phpstorm/download/#section=windows)
 
 **Best Regards**
 \
