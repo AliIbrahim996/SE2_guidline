@@ -209,7 +209,6 @@ In this guideline you will have a full steps instructions on how to install the 
   &nbsp;
   ![19](assets/lara1.png)
 
-
 ## PhpStorm (optional)
 
   `PhpStorm` is perfect for working with Symfony, Laravel, Drupal, WordPress, Zend Framework, Magento, Joomla!, CakePHP, Yii, and other frameworks.The editor actually 'gets' your code and deeply understands its structure, supporting all the PHP language features for modern and legacy projects. It provides the best code completion, refactorings, on-the-fly error prevention, and more.
