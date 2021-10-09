@@ -22,7 +22,7 @@ In this guideline you will have a full steps instructions on how to install the 
  Follow these instructions in order to install XAMPP
   
   1. **Download**:
-  download and install it from [here](https://www.apachefriends.org/xampp-files/8.0.10/xampp-windows-x64-8.0.10-0-VS16-installer.exe)
+  download and install it from [here](https://www.apachefriends.org/xampp-files/7.4.24/xampp-windows-x64-7.4.24-2-VC15-installer.exe)
       \
       &nbsp;
   2. **Run .exe file**:
