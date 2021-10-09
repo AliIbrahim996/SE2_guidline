@@ -85,7 +85,7 @@ In this guideline you will have a full steps instructions on how to install the 
       ![8](assets/vs_code_3.png)
       \
       &nbsp;
-  4. **Select the required options** select all options.
+  4. **Select the required options** **_`select all options`_**.
       \
       &nbsp;
       ![9](assets/vs_code_4.png)
