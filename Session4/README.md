@@ -67,16 +67,21 @@ There are three main areas where PHP scripts are used.
 ```
 
 - Run Xampp control panal like this:
+    \
     &nbsp;
     ![search](../assets/search.png)
     &nbsp;
 - Press on `Start`
+    \
     &nbsp;
     ![control_panal](../assets/xammp_control_panal.jpg)
+    \
     &nbsp;
 - You will see a green background on `Apache`, that means the apache server has started
+    \
     &nbsp;
     ![apache](../assets/apache.jpg)
+    \
     &nbsp;
 - Use your browser to access the file with your web server's URL, ending with the /hello.php file reference. When developing locally this URL will be something like <http://localhost/se2/hello.php> or <http://127.0.0.1/se2/hello.php> but this depends on the web server's configuration. If everything is configured correctly, this file will be parsed by PHP and the following output will be sent to your browser:
 
