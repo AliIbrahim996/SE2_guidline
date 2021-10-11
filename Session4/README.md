@@ -7,12 +7,15 @@
     - [Types](#types)
     - [Variables](#variables)
       - [Variable scope](#variable-scope)
-    - [Constants](#constants)
-    - [Expressions](#expressions)
-    - [Control Structure](#control-structure)
+    - [Constant](#constant)
     - [Functions](#functions)
-    - [Classes and Ob](#classes-and-ob)
+      - [User-defined functions](#user-defined-functions)
+      - [Returning value](#returning-value)
+      - [Variable functions](#variable-functions)
+      - [Anonymous functions](#anonymous-functions)
+    - [Classes and Objects](#classes-and-objects)
     - [Exceptions and Error](#exceptions-and-error)
+    - [More](#more)
 
 ## PHP Introduction
 
@@ -405,14 +408,151 @@ Example:
     Static declarations are resolved in compile-time.
 - You can read more about [References with global and static variables](https://www.php.net/manual/en/language.variables.scope.php#language.variables.scope.references) ,[Variable variables](https://www.php.net/manual/en/language.variables.variable.php) and [Variables From External Sources](https://www.php.net/manual/en/language.variables.external.php). **_`Reading is optional`_**
 
-### Constants
+### Constant
 
-### Expressions
+A constant is an identifier (name) for a simple value. As the name suggests, that value cannot change during the execution of the script (except for magic constants, which aren't actually constants). Constants are case-sensitive. By convention, constant identifiers are always uppercase.
 
-### Control Structure
+>**_Note:_**
+Prior to PHP 8.0.0, constants defined using the define() function may be case-insensitive.
+
+The name of a constant follows the same rules as any label in PHP. A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thusly:`^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
+&nbsp;
+**Example Valid and invalid constant names**
+
+```php
+    <?php
+
+        // Valid constant names
+        define("FOO",     "something");
+        define("FOO2",    "something else");
+        define("FOO_BAR", "something more");
+
+        // Invalid constant names
+        define("2FOO",    "something");
+
+        // This is valid, but should be avoided:
+        // PHP may one day provide a magical constant
+        // that will break your script
+        define("__FOO__", "something"); 
+    ?>
+```
 
 ### Functions
 
-### Classes and Ob
+#### User-defined functions
+
+A function may be defined using syntax such as the following:
+**Example #1 Pseudo code to demonstrate function uses**
+
+```php
+   <?php
+        function foo($arg_1, $arg_2, /* ..., */ $arg_n)
+        {
+            echo "Example function.\n";
+            return $retval;
+        }
+    ?> 
+```
+
+Any valid PHP code may appear inside a function, even other functions and class definitions.
+
+Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: `^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
+
+Functions need not be defined before they are referenced, **_except_** when a function is conditionally defined as shown in the two examples below.
+
+When a function is defined in a conditional manner such as the two examples shown. Its definition must be processed prior to being called.
+**Example #2 Conditional functions**
+
+```php
+    <?php
+
+        $makefoo = true;
+
+        /* We can't call foo() from here 
+        since it doesn't exist yet,
+        but we can call bar() */
+
+        bar();
+
+        if ($makefoo) {
+        function foo()
+        {
+            echo "I don't exist until program execution reaches me.\n";
+        }
+        }
+
+        /* Now we can safely call foo()
+        since $makefoo evaluated to true */
+
+        if ($makefoo) foo();
+
+        function bar() 
+        {
+        echo "I exist immediately upon program start.\n";
+        }
+    ?>
+```
+
+**Example #3 Functions within functions**
+
+```php
+    <?php
+        function foo() 
+        {
+        function bar() 
+        {
+            echo "I don't exist until foo() is called.\n";
+        }
+        }
+
+        /* We can't call bar() yet
+        since it doesn't exist. */
+
+        foo();
+
+        /* Now we can call bar(),
+        foo()'s processing has
+        made it accessible. */
+
+        bar();
+    ?>
+```
+
+All functions and classes in PHP have the global scope - they can be called outside a function even if they were defined inside and vice versa.
+
+PHP does not support function overloading, nor is it possible to undefine or redefine previously-declared functions.
+
+>**Note:**
+Function names are case-insensitive for the ASCII characters A to Z, though it is usually good form to call functions as they appear in their declaration.
+
+It is possible to call recursive functions in PHP.
+**Example #4 Recursive functions**
+
+```php
+    <?php
+        function recursion($a)
+        {
+            if ($a < 20) {
+                echo "$a\n";
+                recursion($a + 1);
+            }
+        }
+    ?>
+```
+
+>**Note:**
+Recursive function/method calls with over 100-200 recursion levels can smash the stack and cause a termination of the current script. Especially, infinite recursion is considered a programming error.
+
+#### Returning value
+
+#### Variable functions
+
+#### Anonymous functions
+
+### Classes and Objects
 
 ### Exceptions and Error
+
+### More
+
+You can read about [Expressions](https://www.php.net/manual/en/language.expressions.php), [Operators](https://www.php.net/manual/en/language.operators.php) and [Control Structure](https://www.php.net/manual/en/language.control-structures.php)...etc.
