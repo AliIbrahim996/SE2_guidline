@@ -10,6 +10,7 @@
     - [Constant](#constant)
     - [Functions](#functions)
       - [User-defined functions](#user-defined-functions)
+      - [Function arguments](#function-arguments)
       - [Returning value](#returning-value)
       - [Variable functions](#variable-functions)
       - [Anonymous functions](#anonymous-functions)
@@ -415,142 +416,329 @@ Example:
 
 ### Constant
 
-A constant is an identifier (name) for a simple value. As the name suggests, that value cannot change during the execution of the script (except for magic constants, which aren't actually constants). Constants are case-sensitive. By convention, constant identifiers are always uppercase.
+- A constant is an identifier (name) for a simple value. As the name suggests, that value cannot change during the execution of the script (except for magic constants, which aren't actually constants). Constants are case-sensitive. By convention, constant identifiers are always uppercase.
 
 >**_Note:_**
 Prior to PHP 8.0.0, constants defined using the define() function may be case-insensitive.
 
-The name of a constant follows the same rules as any label in PHP. A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thusly:`^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
+- The name of a constant follows the same rules as any label in PHP. A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thusly:`^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
 &nbsp;
-**Example Valid and invalid constant names**
+- **Example Valid and invalid constant names**
 
-```php
-    <?php
+    ```php
+        <?php
 
-        // Valid constant names
-        define("FOO",     "something");
-        define("FOO2",    "something else");
-        define("FOO_BAR", "something more");
+            // Valid constant names
+            define("FOO",     "something");
+            define("FOO2",    "something else");
+            define("FOO_BAR", "something more");
 
-        // Invalid constant names
-        define("2FOO",    "something");
+            // Invalid constant names
+            define("2FOO",    "something");
 
-        // This is valid, but should be avoided:
-        // PHP may one day provide a magical constant
-        // that will break your script
-        define("__FOO__", "something"); 
-    ?>
-```
+            // This is valid, but should be avoided:
+            // PHP may one day provide a magical constant
+            // that will break your script
+            define("__FOO__", "something"); 
+        ?>
+    ```
 
 ### Functions
 
 #### User-defined functions
 
-A function may be defined using syntax such as the following:
-**Example #1 Pseudo code to demonstrate function uses**
+- A function may be defined using syntax such as the following:
+- **Example #1 Pseudo code to demonstrate function uses**
 
-```php
-   <?php
-        function foo($arg_1, $arg_2, /* ..., */ $arg_n)
-        {
-            echo "Example function.\n";
-            return $retval;
-        }
-    ?> 
-```
-
-Any valid PHP code may appear inside a function, even other functions and class definitions.
-
-Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: `^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
-
-Functions need not be defined before they are referenced, **_except_** when a function is conditionally defined as shown in the two examples below.
-
-When a function is defined in a conditional manner such as the two examples shown. Its definition must be processed prior to being called.
-**Example #2 Conditional functions**
-
-```php
+    ```php
     <?php
+            function foo($arg_1, $arg_2, /* ..., */ $arg_n)
+            {
+                echo "Example function.\n";
+                return $retval;
+            }
+        ?> 
+    ```
 
-        $makefoo = true;
+- Any valid PHP code may appear inside a function, even other functions and class definitions.
 
-        /* We can't call foo() from here 
-        since it doesn't exist yet,
-        but we can call bar() */
+- Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: `^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
 
-        bar();
+- Functions need not be defined before they are referenced, **_except_** when a function is conditionally defined as shown in the two examples below.
 
-        if ($makefoo) {
-        function foo()
-        {
-            echo "I don't exist until program execution reaches me.\n";
-        }
-        }
+- When a function is defined in a conditional manner such as the two examples shown. Its definition must be processed prior to being called.
+- **Example #2 Conditional functions**
 
-        /* Now we can safely call foo()
-        since $makefoo evaluated to true */
+    ```php
+        <?php
 
-        if ($makefoo) foo();
+            $makefoo = true;
 
-        function bar() 
-        {
-        echo "I exist immediately upon program start.\n";
-        }
-    ?>
-```
+            /* We can't call foo() from here 
+            since it doesn't exist yet,
+            but we can call bar() */
 
-**Example #3 Functions within functions**
+            bar();
 
-```php
-    <?php
-        function foo() 
-        {
-        function bar() 
-        {
-            echo "I don't exist until foo() is called.\n";
-        }
-        }
+            if ($makefoo) {
+            function foo()
+            {
+                echo "I don't exist until program execution reaches me.\n";
+            }
+            }
 
-        /* We can't call bar() yet
-        since it doesn't exist. */
+            /* Now we can safely call foo()
+            since $makefoo evaluated to true */
 
-        foo();
+            if ($makefoo) foo();
 
-        /* Now we can call bar(),
-        foo()'s processing has
-        made it accessible. */
+            function bar() 
+            {
+            echo "I exist immediately upon program start.\n";
+            }
+        ?>
+    ```
 
-        bar();
-    ?>
-```
+- **Example #3 Functions within functions**
 
-All functions and classes in PHP have the global scope - they can be called outside a function even if they were defined inside and vice versa.
+    ```php
+        <?php
+            function foo() 
+            {
+            function bar() 
+            {
+                echo "I don't exist until foo() is called.\n";
+            }
+            }
 
-PHP does not support function overloading, nor is it possible to undefine or redefine previously-declared functions.
+            /* We can't call bar() yet
+            since it doesn't exist. */
+
+            foo();
+
+            /* Now we can call bar(),
+            foo()'s processing has
+            made it accessible. */
+
+            bar();
+        ?>
+    ```
+
+- All functions and classes in PHP have the global scope - they can be called outside a function even if they were defined inside and vice versa.
+
+- PHP does not support function overloading, nor is it possible to undefine or redefine previously-declared functions.
 
 >**Note:**
 Function names are case-insensitive for the ASCII characters A to Z, though it is usually good form to call functions as they appear in their declaration.
 
-It is possible to call recursive functions in PHP.
-**Example #4 Recursive functions**
+- It is possible to call recursive functions in PHP.
+- **Example #4 Recursive functions**
 
-```php
-    <?php
-        function recursion($a)
-        {
-            if ($a < 20) {
-                echo "$a\n";
-                recursion($a + 1);
+    ```php
+        <?php
+            function recursion($a)
+            {
+                if ($a < 20) {
+                    echo "$a\n";
+                    recursion($a + 1);
+                }
             }
-        }
-    ?>
-```
+        ?>
+    ```
 
 >**Note:**
-Recursive function/method calls with over 100-200 recursion levels can smash the stack and cause a termination of the current script. Especially, infinite recursion is considered a programming error.
+  Recursive function/method calls with over 100-200 recursion levels can smash the stack and cause a termination of the current script. Especially, infinite recursion is considered a programming error.
+
+#### Function arguments
+
+- PHP supports passing arguments by value (the default), passing by reference, and default argument values. Variable-length argument lists and Named Arguments are also supported
+
+- **Example #1 Passing arrays to functions**
+
+    ```php
+        <?php
+            function takes_array($input)
+            {
+                echo "$input[0] + $input[1] = ", $input[0]+$input[1];
+            }
+        ?>
+
+    ```
+
+- The list of function arguments may include a trailing comma, which will be ignored. That is particularly useful in cases where the list of arguments is long or contains long variable names, making it convenient to list arguments vertically.
+- **Example #2 Function Argument List with trailing Comma**
+
+    ```php
+         <?php
+            function takes_many_args(
+                $first_arg,
+                $second_arg,
+                $a_very_long_argument_name,
+                $arg_with_default = 5,
+                $again = 'a default string', // This trailing comma was not permitted before 8.0.0.
+            )
+            {
+                // ...
+            }
+        ?>
+    ```
+
+- Passing mandatory arguments after optional arguments is deprecated. This can generally be resolved by dropping the default value. One exception to this rule are arguments of the form Type $param = null, where the null default makes the type implicitly nullable. This usage remains allowed, though it is recommended to use an explicit nullable type instead.
+  
+- **Example #3 Passing optional arguments after mandatory arguments**
+
+    ```php
+         <?php
+            function foo($a = [], $b) {} // Before
+            function foo($a, $b) {}      // After
+            function bar(A $a = null, $b) {} // Still allowed
+            function bar(?A $a, $b) {}       // Recommended
+        ?>
+    ```
+
+- Read more about passing argument [**_`Recommended`_**](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.by-reference)
 
 #### Returning value
 
+- Values are returned by using the optional return statement. Any type may be returned, including arrays and objects. This causes the function to end its execution immediately and pass control back to the line from which it was called. See [return](https://www.php.net/manual/en/function.return.php)for more information.
+
+>**_Note_**
+If the return is omitted the value null will be returned.
+
+- **Use of return:**
+  - **Example #1:**
+
+    ```php
+        <?php
+            function square($num)
+            {
+                return $num * $num;
+            }
+            echo square(4);   // outputs '16'.
+        ?>
+    ```
+
+  - A function can not return multiple values, but similar results can be obtained by returning an array.
+&nbsp;
+  - **Example #2 Returning an array to get multiple values**
+
+    ```php
+       <?php
+            function small_numbers()
+            {
+                return [0, 1, 2];
+            }
+            // Array destructuring will collect each member of the array individually
+            [$zero, $one, $two] = small_numbers();
+
+            // Prior to 7.1.0, the only equivalent alternative is using list() construct
+            list($zero, $one, $two) = small_numbers();
+        ?>
+    ```
+
 #### Variable functions
+
+- PHP supports the concept of variable functions. This means that if a variable name has parentheses appended to it, PHP will look for a function with the same name as whatever the variable evaluates to, and will attempt to execute it. Among other things, this can be used to implement callbacks, function tables, and so forth.
+
+- Variable functions won't work with language constructs such as echo, print, unset(), isset(), empty(), include, require and the like. Utilize wrapper functions to make use of any of these constructs as variable functions
+
+- **Example #1 Variable function example**
+  
+    ```php
+        <?php
+            function foo() {
+                echo "In foo()<br />\n";
+            }
+
+            function bar($arg = '')
+            {
+                echo "In bar(); argument was '$arg'.<br />\n";
+            }
+
+            // This is a wrapper function around echo
+            function echoit($string)
+            {
+                echo $string;
+            }
+
+            $func = 'foo';
+            $func();        // This calls foo()
+
+            $func = 'bar';
+            $func('test');  // This calls bar()
+
+            $func = 'echoit';
+            $func('test');  // This calls echoit()
+        ?>
+    ```
+
+- **Example #2 Variable method example**
+
+    ```php
+        <?php
+            class Foo
+            {
+                function Variable()
+                {
+                    $name = 'Bar';
+                    $this->$name(); // This calls the Bar() method
+                }
+                
+                function Bar()
+                {
+                    echo "This is Bar";
+                }
+            }
+
+            $foo = new Foo();
+            $funcname = "Variable";
+            $foo->$funcname();  // This calls $foo->Variable()
+        ?>
+    ```
+
+- **Example #3 Variable method example with static properties**
+
+    ```php
+        <?php
+            class Foo
+            {
+                static $variable = 'static property';
+                static function Variable()
+                {
+                    echo 'Method Variable called';
+                }
+            }
+
+            echo Foo::$variable; // This prints 'static property'. It does need a $variable in this scope.
+            $variable = "Variable";
+            Foo::$variable();  // This calls $foo->Variable() reading $variable in this scope.
+         ?>
+    ```
+
+- **Example #4 Complex callables**
+
+    ```php
+        <?php
+            class Foo
+            {
+                static function bar()
+                {
+                    echo "bar\n";
+                }
+                function baz()
+                {
+                    echo "baz\n";
+                }
+            }
+
+            $func = array("Foo", "bar");
+            $func(); // prints "bar"
+            $func = array(new Foo, "baz");
+            $func(); // prints "baz"
+            $func = "Foo::bar";
+            $func(); // prints "bar"
+        ?>
+    ```
 
 #### Anonymous functions
 
