@@ -25,15 +25,20 @@ In this guideline you will have a full steps instructions on how to install the 
 * * *
 
 - Before we start to download and install android studio, we shall first use a vpn in order to access websites which we will use.
-  - You can download freegate from [here](https://www.techspot.com/downloads/6243-freegate.html).You will get  a page like this
-    \
-    &nbsp;
-     click on button marked in red![freegate](assets/f1.png).
-    \
-    &nbsp;
-  - Start freegate `you shall see a window like this`
-    ![freegate2](assets/f2.jpg)
+  - You can download freegate from [here](https://www.techspot.com/downloads/6243-freegate.html).You will get  a page like the downbelow image, click on button marked in red!
+\
+&nbsp;
+    
+   ![freegate](assets/f1.png)
+\
+&nbsp;
 
+  - Start freegate `you shall see a window like this`
+\
+&nbsp;
+    ![freegate2](assets/f2.jpg)
+\
+&nbsp;
   >**Note** you should chcek that freegate is working in the background _(you will see a graph for network traffic and a simmiler sentence like this `connected to 7 servers`)_
 
 ### Android Studio installation
@@ -41,16 +46,20 @@ In this guideline you will have a full steps instructions on how to install the 
 - You can download android studio from [here](https://developer.android.com/studio)
 
 - After you click on the link you will see a page like this._`click on the green button`_
+\
+&nbsp;
 
-    ![andoird1](assets/d1.jpg)
-    \
-    &nbsp;
+   ![andoird1](assets/d1.jpg)
+\
+&nbsp;
 
 - Then Choose `I have read and agree ...` then press on the green button:
-
-    ![android2](assets/d2.jpg)
-  \
-  &nbsp;
+\
+ &nbsp;
+ 
+   ![android2](assets/d2.jpg)
+\
+&nbsp;
 - When the download process is finished, run  android studio step. _you should see a window like this_:
   \
   &nbsp;
@@ -71,7 +80,7 @@ In this guideline you will have a full steps instructions on how to install the 
   \
   &nbsp;
 
-    ![android5](assets/4.png)
+    ![android4](assets/4.jpg)
   \
   &nbsp;
 
