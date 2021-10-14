@@ -210,6 +210,22 @@ In this guideline you will have a full steps instructions on how to install the 
     ![android26](assets/26.jpg)
   \
   &nbsp;
+\
+&nbsp;
+\
+&nbsp;
+\
+&nbsp;
+\
+&nbsp;
+\
+&nbsp;
+\
+&nbsp;
+\
+&nbsp;
+\
+&nbsp;
 
 ### Create a new project
 
