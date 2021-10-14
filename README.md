@@ -3,6 +3,11 @@
 In this guideline you will have a full steps instructions on how to install the required tools for our course.
 
 - [Installation steps](#installation-steps)
+  - [Android Setup](#android-setup)
+    - [Android Studio installation](#android-studio-installation)
+    - [Android SDK downloading](#android-sdk-downloading)
+    - [Proxy setup](#proxy-setup)
+    - [Create a new project](#create-a-new-project)
   - [XAMPP](#xampp)
   - [Vscode Installation](#vscode-installation)
   - [Composer](#composer)
@@ -14,6 +19,221 @@ In this guideline you will have a full steps instructions on how to install the 
       - [A Community Framework](#a-community-framework)
     - [How to install laravel?](#how-to-install-laravel)
   - [PhpStorm (optional)](#phpstorm-optional)
+
+## Android Setup
+
+* * *
+
+- Before we start to download and install android studio, we shall first use a vpn in order to access websites which we will use.
+  - You can download freegate from [here](https://www.techspot.com/downloads/6243-freegate.html).You will get  a page like this
+    \
+    &nbsp;
+     click on button marked in red![freegate](assets/f1.png).
+    \
+    &nbsp;
+  - Start freegate `you shall see a window like this`
+    ![freegate2](assets/f2.jpg)
+
+  >**Note** you should chcek that freegate is working in the background _(you will see a graph for network traffic and a simmiler sentence like this `connected to 7 servers`)_
+
+### Android Studio installation
+
+- You can download android studio from [here](https://developer.android.com/studio)
+
+- After you click on the link you will see a page like this._`click on the green button`_
+
+    ![andoird1](assets/d1.jpg)
+    \
+    &nbsp;
+
+- Then Choose `I have read and agree ...` then press on the green button:
+
+    ![android2](assets/d2.jpg)
+  \
+  &nbsp;
+- When the download process is finished, run  android studio step. _you should see a window like this_:
+  \
+  &nbsp;
+
+    ![android3](assets/1.png)
+  \
+  &nbsp;
+
+- Just click next and folllow these steps:
+   \
+  &nbsp;
+
+    ![android4](assets/2.png)
+  \
+  &nbsp;
+
+    ![android5](assets/3.png)
+  \
+  &nbsp;
+
+    ![android5](assets/4.png)
+  \
+  &nbsp;
+
+    ![android5](assets/5.jpg)
+  \
+  &nbsp;
+- Click finsih.
+  \
+  &nbsp;
+    ![android6](assets/6.png)
+  \
+  &nbsp;
+
+- After pressing the finish button, the program will open.
+  The following interface may appear. Choose the option "Do not import settings" and press OK.
+  \
+  &nbsp;
+    ![android7](assets/7.png)
+  \
+  &nbsp;
+- A new window may appear as the following we choose the option _`Don't Send`_
+  \
+  &nbsp;
+    ![android8.5](assets/8.5.jpg)
+  \
+  &nbsp;
+- Click next:
+  \
+  &nbsp;
+    ![android8](assets/8.png)
+  \
+  &nbsp;
+- Choose _`Standard`_
+  \
+  &nbsp;
+    ![android9](assets/9.png)
+  \
+  &nbsp;
+
+- Choose which theme you prefer
+  \
+  &nbsp;
+    ![android10](assets/10.png)
+  \
+  &nbsp;
+- Click `Next`:
+  \
+  &nbsp;
+    ![android8](assets/15.png)
+  \
+  &nbsp;
+- Click `finish`:
+  \
+  &nbsp;
+    ![android8](assets/11.png)
+  \
+  &nbsp;
+
+- The start window of the program will appear:
+  \
+  &nbsp;
+    ![android8](assets/12.png)
+  \
+  &nbsp;
+
+### Android SDK downloading
+
+- Download `Android sdk` from [here](https://drive.google.com/file/d/14HiiqvjI_BJek-sZYcuD9M5MIdTB7uGF/view?usp=sharing).
+
+- Create a new folder at `C:\` named `Android`.
+- copy the downloaded rar file into `C:\Android`.
+- Extract `sdk.rar` there:
+  \
+  &nbsp;
+    ![androida5](assets/a5.png)
+  \
+  &nbsp;
+
+- Go back to android studio and click on the `New project` button, a window will appear, from which we choose `open sdk manager` and a similar window will appear
+  for the next window (Your window will not contain all the elements here).Just click edit
+  \
+  &nbsp;
+    ![android21](assets/21.jpg)
+  \
+  &nbsp;
+  - Click on the button marked in red
+  \
+  &nbsp;
+    ![android22](assets/22.jpg)
+  \
+  &nbsp;
+
+- A new window appears for us to choose a new path. We choose the path in which we put the sdk file, which is
+  `C:\Android` as in the following image and press OK, after that click next
+  \
+  &nbsp;
+    ![android23](assets/23.jpg)
+  \
+  &nbsp;
+
+- Click `finish`
+  \
+  &nbsp;
+    ![android17](assets/17.png)
+  \
+  &nbsp;
+
+- The manager sdk window will appear again and there should be and item appears within the specified area in red here (it is not necessary to have all the items you have as in the picture).
+  \
+  &nbsp;
+    ![android24](assets/24.png)
+  \
+  &nbsp;
+
+### Proxy setup
+
+- Now, within the previous window, we click on the option Http proxy marked in red.
+  \
+  &nbsp;
+    ![android25](assets/25.png)
+  \
+  &nbsp;
+
+  - We make the specified changes marked in red, and then click OK
+  \
+  &nbsp;
+    ![android26](assets/26.jpg)
+  \
+  &nbsp;
+
+### Create a new project
+
+- The start window of the program will appear agin so click on `New project`:
+  \
+  &nbsp;
+    ![android12](assets/12.png)
+  \
+  &nbsp;
+
+- Choose `Empty Activity` and click next:
+  \
+  &nbsp;
+    ![android19](assets/19.png)
+  \
+  &nbsp;
+
+- The following window will appear **_`(we choose java in the language field)`_**.
+In `Save Location` feild contains the path where Android Studio projects will be saved (it may vary from device to device and can be changed to your desired path)
+  \
+  &nbsp;
+    ![android27](assets/27.jpg)
+  \
+  &nbsp;
+
+- **Before clicking on the finish button, you must make sure that the freegate program is running**.
+- Incase that it does not work, **close the program**, check your internet connection, and then run the freegate again. - Now, we click on the `finish` button, and the program will start downloading the necessary packages.
+- Incase of  an error occurs during the download process due to poor internet connection or the freegate program has stopped, we press the `synchronization button` shown in red to resume the download.)
+  \
+  &nbsp;
+    ![android28](assets/28.jpg)
+  \
+  &nbsp;
 
 ## XAMPP
 
