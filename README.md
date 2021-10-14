@@ -182,7 +182,7 @@ In this guideline you will have a full steps instructions on how to install the 
 - The manager sdk window will appear again and there should be and item appears within the specified area in red here (it is not necessary to have all the items you have as in the picture).
   \
   &nbsp;
-    ![android24](assets/24.png)
+    ![android24](assets/24.jpg)
   \
   &nbsp;
 
