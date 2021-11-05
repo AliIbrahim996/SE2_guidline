@@ -46,7 +46,7 @@ There are three main areas where PHP scripts are used.
   
 - Writing desktop applications. PHP is probably not the very best language to create a desktop application with a graphical user interface, but if you know PHP very well, and would like to use some advanced PHP features in your client-side applications you can also use PHP-GTK to write such programs. You also have the ability to write cross-platform applications this way. PHP-GTK is an extension to PHP, not available in the main distribution
 
-- With PHP you are not limited to output HTML. PHP's abilities includes outputting images, PDF files and even Flash movies (using libswf and Ming) generated on the fly. You can also output easily any text, such as XHTML and any other XML file. PHP can autogenerate these files, and save them in the file system, instead of printing it out, forming a server-side cache for your dynamic content.
+- With PHP, you are not limited to output HTML. PHP's abilities includes outputting images, PDF files and even Flash movies (using libswf and Ming) generated on the fly. You can also output easily any text, such as XHTML and any other XML file. PHP can autogenerate these files, and save them in the file system, instead of printing it out, forming a server-side cache for your dynamic content.
 
 - One of the strongest and most significant features in PHP is its support for a wide range of databases. Writing a database-enabled web page is incredibly simple using one of the database specific extensions (e.g., for mysql), or using an abstraction layer like PDO, or connect to any database supporting the Open Database Connection standard via the ODBC extension. Other databases may utilize cURL or sockets, like CouchDB.
 
@@ -57,7 +57,7 @@ There are three main areas where PHP scripts are used.
 - Create a file named `hello.php` and put it in your web server's root directory (DOCUMENT_ROOT) in our case in `c:\xampp\htdocs\se2\` then write  the following content:
 
 ```html
-    <html>
+    <html lang="en">
         <head>
             <title>PHP Test</title>
         </head>
@@ -67,7 +67,7 @@ There are three main areas where PHP scripts are used.
     </html>
 ```
 
-- Run Xampp control panal like this:
+- Run Xampp control panel like this:
     \
     &nbsp;
     ![search](../assets/search.png)
@@ -75,7 +75,7 @@ There are three main areas where PHP scripts are used.
 - Press on `Start`
     \
     &nbsp;
-    ![control_panal](../assets/xammp_control_panal.jpg)
+    ![control_panel](../assets/xammp_control_panal.jpg)
     \
     &nbsp;
 - You will see a green background on `Apache`, that means the apache server has started
@@ -87,8 +87,7 @@ There are three main areas where PHP scripts are used.
 - Use your browser to access the file with your web server's URL, ending with the /hello.php file reference. When developing locally this URL will be something like <http://localhost/se2/hello.php> or <http://127.0.0.1/se2/hello.php> but this depends on the web server's configuration. If everything is configured correctly, this file will be parsed by PHP and the following output will be sent to your browser:
 
     ```html
-
-        <html>
+        <html lang="en">
             <head>
                 <title>PHP Test</title>
             </head>
@@ -98,9 +97,9 @@ There are three main areas where PHP scripts are used.
         </html>
     ```
 
-This program is extremely simple and you really did not need to use PHP to create a page like this. All it does is display: Hello World using the PHP `echo` statement. Note that the file does not need to be executable or special in any way. The server finds out that this file needs to be interpreted by PHP because you used the ".php" extension, which the server is configured to pass on to PHP. Think of this as a normal HTML file which happens to have a set of special tags available to you that do a lot of interesting things.
+This program is extremely simple, and you really did not need to use PHP to create a page like this. All it does is display: Hello World using the PHP `echo` statement. Note that the file does not need to be executable or special in any way. The server finds out that this file needs to be interpreted by PHP because you used the ".php" extension, which the server is configured to pass on to PHP. Think of this as a normal HTML file which happens to have a set of special tags available to you that do a lot of interesting things.
 
-When PHP parses a file, it looks for opening and closing tags, which are <?php and ?> which tell PHP to start and stop interpreting the code between them. Parsing in this manner allows PHP to be embedded in all sorts of different documents, as everything outside of a pair of opening and closing tags is ignored by the PHP parser.
+When PHP parses a file, it looks for opening and closing tags, which are <?php and ?> which tell PHP to start and stop interpreting the code between them. Parsing in this manner allows PHP to be embedded in all sorts of different documents, as everything outside a pair of opening and closing tags is ignored by the PHP parser.
   PHP includes a short echo tag <?= which is a short-hand to the more verbose <?php echo.
 
 > Example #1 PHP Opening and Closing Tags
@@ -151,7 +150,7 @@ And finally two special types:
 - NULL
 
 **_NOTE_**
-> The type of a variable is not usually set by the programmer; rather, it is decided at runtime by PHP depending on the context in which that variable is used.
+> The type of variable is not usually set by the programmer; rather, it is decided at runtime by PHP depending on the context in which that variable is used.
 > To check the type and value of an expression, use the var_dump() function.
 To get a human-readable representation of a type for debugging, use the gettype() function. To check for a certain type, do not use gettype(), but rather the is_type functions.
 
@@ -259,7 +258,7 @@ Example:
         $unset_arr[3] = "def"; // array() + array(3 => "def") => array(3 => "def")
         var_dump($unset_arr);
 
-        // Object usage; creates new stdClass object (see http://www.php.net/manual/en/reserved.classes.php)
+        // Object usage; creates new stdClass object (see https://www.php.net/manual/en/reserved.classes.php)
         // Outputs: object(stdClass)#1 (1) {  ["foo"]=>  string(3) "bar" }
         $unset_obj->foo = 'bar';
         var_dump($unset_obj);
@@ -292,7 +291,7 @@ Example:
     ?>
   ```
 
-- This script will not produce any output because the echo statement refers to a local version of the $a variable, and it has not been assigned a value within this scope. You may notice that this is a little bit different from the C language in that global variables in C are automatically available to functions unless specifically overridden by a local definition. This can cause some problems in that people may inadvertently change a global variable. In PHP global variables must be declared global inside a function if they are going to be used in that function.
+- This script will not produce any output because the echo statement refers to a local version of the $a variable, and it has not been assigned a value within this scope. You may notice that this is a little different from the C language in that global variables in C are automatically available to functions unless specifically overridden by a local definition. This can cause some problems in that people may inadvertently change a global variable. In PHP global variables must be declared global inside a function if they are going to be used in that function.
 - **The** `global` **keyword**
   - Example #1 Using global:
 
@@ -419,7 +418,7 @@ Example:
 - A constant is an identifier (name) for a simple value. As the name suggests, that value cannot change during the execution of the script (except for magic constants, which aren't actually constants). Constants are case-sensitive. By convention, constant identifiers are always uppercase.
 
 >**_Note:_**
-Prior to PHP 8.0.0, constants defined using the define() function may be case-insensitive.
+Prior to PHP 8.0.0, constants defined using to define() function may be case-insensitive.
 
 - The name of a constant follows the same rules as any label in PHP. A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thusly:`^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$`.
 &nbsp;
@@ -472,7 +471,7 @@ Prior to PHP 8.0.0, constants defined using the define() function may be case-in
     ```php
         <?php
 
-            $makefoo = true;
+            $make_foo = true;
 
             /* We can't call foo() from here 
             since it doesn't exist yet,
@@ -488,7 +487,7 @@ Prior to PHP 8.0.0, constants defined using the define() function may be case-in
             }
 
             /* Now we can safely call foo()
-            since $makefoo evaluated to true */
+            since $make_foo evaluated to true */
 
             if ($makefoo) foo();
 
@@ -640,7 +639,7 @@ If the return is omitted the value null will be returned.
 
 - PHP supports the concept of variable functions. This means that if a variable name has parentheses appended to it, PHP will look for a function with the same name as whatever the variable evaluates to, and will attempt to execute it. Among other things, this can be used to implement callbacks, function tables, and so forth.
 
-- Variable functions won't work with language constructs such as echo, print, unset(), isset(), empty(), include, require and the like. Utilize wrapper functions to make use of any of these constructs as variable functions
+- Variable functions won't work with language constructs such as echo, print, unset(), isset(), empty(), include, require and the like. Utilize wrapper functions to make use of these constructs as variable functions
 
 - **Example #1 Variable function example**
   
@@ -656,7 +655,7 @@ If the return is omitted the value null will be returned.
             }
 
             // This is a wrapper function around echo
-            function echoit($string)
+            function echo_it($string)
             {
                 echo $string;
             }
@@ -665,10 +664,10 @@ If the return is omitted the value null will be returned.
             $func();        // This calls foo()
 
             $func = 'bar';
-            $func('test');  // This calls bar()
+            $func('test');  // These calls bar()
 
-            $func = 'echoit';
-            $func('test');  // This calls echoit()
+            $func = 'echo_it';
+            $func('test');  // These calls echo_it()
         ?>
     ```
 
@@ -691,8 +690,8 @@ If the return is omitted the value null will be returned.
             }
 
             $foo = new Foo();
-            $funcname = "Variable";
-            $foo->$funcname();  // This calls $foo->Variable()
+            $func_name = "Variable";
+            $foo->$func_name();  // This calls $foo->Variable()
         ?>
     ```
 
