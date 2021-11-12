@@ -3,24 +3,27 @@
 **Table of content**
 
 - [Session 5: Application Programming Interface](#session-5-application-programming-interface)
-  - [What is API](#what-is-api)
-  - [What is MVC](#what-is-mvc)
-  - [HTTP protocol](#http-protocol)
+  - [Web Services - Introduction](#web-services---introduction)
+  - [Application Programming Interface](#application-programming-interface)
+  - [Model-View-Controller(MVC)](#model-view-controllermvc)
+  - [Hyper-Text Transfer Protocol (HTTP)](#hyper-text-transfer-protocol-http)
     - [Request life cycle](#request-life-cycle)
     - [HTTP methods](#http-methods)
-    - [HTTP response code](#http-response-code)
+    - [HTTP Response Code](#http-response-code)
   - [Javascript Object Notation (JSON)](#javascript-object-notation-json)
 
-## What is API
+## Web Services - Introduction
 
-## What is MVC
+## Application Programming Interface
 
-## HTTP protocol
+## Model-View-Controller(MVC)
+
+## Hyper-Text Transfer Protocol (HTTP)
 
 ### Request life cycle
 
 ### HTTP methods
 
-### HTTP response code
+### HTTP Response Code
 
 ## Javascript Object Notation (JSON)
