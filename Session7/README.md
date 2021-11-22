@@ -28,6 +28,8 @@ Laravel new Products
 ```
 
 - After installation process is finished, you may see an output like this:
+\
+&nbsp;
   ![laravel_installation](../assets/Laravel_1.jpg)
 
 
